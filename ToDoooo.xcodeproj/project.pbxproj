@@ -17,6 +17,7 @@
 		7B9E058D29C711ED00EB534C /* ToDooooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E058C29C711ED00EB534C /* ToDooooTests.swift */; };
 		7B9E059729C711ED00EB534C /* ToDooooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E059629C711ED00EB534C /* ToDooooUITests.swift */; };
 		7B9E059929C711ED00EB534C /* ToDooooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E059829C711ED00EB534C /* ToDooooUITestsLaunchTests.swift */; };
+		7BD9CB3A29CCAB7D001250B9 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD9CB3929CCAB7D001250B9 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7B9E059229C711ED00EB534C /* ToDooooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDooooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9E059629C711ED00EB534C /* ToDooooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDooooUITests.swift; sourceTree = "<group>"; };
 		7B9E059829C711ED00EB534C /* ToDooooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDooooUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BD9CB3929CCAB7D001250B9 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		7B40E9D829C9A55700AF8FFF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7BD9CB3929CCAB7D001250B9 /* CategoryViewController.swift */,
 				7B9E057929C711EC00EB534C /* ToDoListViewController.swift */,
 			);
 			path = Controllers;
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD9CB3A29CCAB7D001250B9 /* CategoryViewController.swift in Sources */,
 				7B5C01FB29CB1360000677AD /* DataModel.xcdatamodeld in Sources */,
 				7B9E057A29C711EC00EB534C /* ToDoListViewController.swift in Sources */,
 				7B9E057629C711EC00EB534C /* AppDelegate.swift in Sources */,
