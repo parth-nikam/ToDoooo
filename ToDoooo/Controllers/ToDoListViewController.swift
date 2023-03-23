@@ -19,9 +19,9 @@ class ToDoListViewController: UITableViewController {
         
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
-//        loadItems()
+        loadItems()
+        
     }
-    
     //MARK: - TableView Datasource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,7 +48,7 @@ class ToDoListViewController: UITableViewController {
         
         context.delete(itemArray[indexPath.row])
         itemArray.remove(at: indexPath.row)
-//        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        //        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         
         saveItems()
         
@@ -99,15 +99,30 @@ class ToDoListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-    func loadItems(){
+    func loadItems(request: NSFetchRequest<Item> = Item.fetchRequest()){
         let request: NSFetchRequest <Item> = Item.fetchRequest()
         do{
-            try context.fetch(request)
+            itemArray = try context.fetch(request)
         } catch {
             print("Error fetching data from context \(error)")
         }
         
     }
-    
 }
 
+//MARK: - Search Bar Methods
+
+
+extension ToDoListViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        
+        request.predicate = NSPredicate(format: "title Contains[cd] %@", searchBar.text!)
+        
+        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+    
+        loadItems(request: request)
+        
+        tableView.reloadData()
+    }
+}
