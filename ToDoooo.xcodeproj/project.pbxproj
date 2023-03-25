@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		586E72DD8E2328E7F696539E /* Pods_ToDoooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452104A10174690D946EB27A /* Pods_ToDoooo.framework */; };
 		7B32391D29CEBC8F000780BB /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7B32391C29CEBC8F000780BB /* SwipeCellKit */; };
 		7B32391F29CECB46000780BB /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32391E29CECB46000780BB /* SwipeTableViewController.swift */; };
 		7B9E057629C711EC00EB534C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E057529C711EC00EB534C /* AppDelegate.swift */; };
@@ -43,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AE2C67FB52059EDD8B65D4A /* Pods-ToDoooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoooo.debug.xcconfig"; path = "Target Support Files/Pods-ToDoooo/Pods-ToDoooo.debug.xcconfig"; sourceTree = "<group>"; };
+		452104A10174690D946EB27A /* Pods_ToDoooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500183E86AF7CE1C2DA05C9E /* Pods-ToDoooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoooo.release.xcconfig"; path = "Target Support Files/Pods-ToDoooo/Pods-ToDoooo.release.xcconfig"; sourceTree = "<group>"; };
 		7B32391E29CECB46000780BB /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		7B9E057229C711EC00EB534C /* ToDoooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9E057529C711EC00EB534C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 				7BC922B729CD648900DCD0F1 /* RealmSwift in Frameworks */,
 				7B32391D29CEBC8F000780BB /* SwipeCellKit in Frameworks */,
 				7BC922B529CD648900DCD0F1 /* Realm in Frameworks */,
+				586E72DD8E2328E7F696539E /* Pods_ToDoooo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B92DCA752CC3F625732D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				452104A10174690D946EB27A /* Pods_ToDoooo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B40E9D529C9A50300AF8FFF /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,8 @@
 				7B9E058B29C711ED00EB534C /* ToDooooTests */,
 				7B9E059529C711ED00EB534C /* ToDooooUITests */,
 				7B9E057329C711EC00EB534C /* Products */,
+				EFD8F290FF4F66D0BBB1152D /* Pods */,
+				35B92DCA752CC3F625732D6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +192,16 @@
 			path = ToDooooUITests;
 			sourceTree = "<group>";
 		};
+		EFD8F290FF4F66D0BBB1152D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2C67FB52059EDD8B65D4A /* Pods-ToDoooo.debug.xcconfig */,
+				500183E86AF7CE1C2DA05C9E /* Pods-ToDoooo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B9E059C29C711ED00EB534C /* Build configuration list for PBXNativeTarget "ToDoooo" */;
 			buildPhases = (
+				9D373BB02AFA4368962E433C /* [CP] Check Pods Manifest.lock */,
 				7B9E056E29C711EC00EB534C /* Sources */,
 				7B9E056F29C711EC00EB534C /* Frameworks */,
 				7B9E057029C711EC00EB534C /* Resources */,
+				0921AD313DF8D92D14BCB54A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +298,7 @@
 			);
 			mainGroup = 7B9E056929C711EC00EB534C;
 			packageReferences = (
-				7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift.git" */,
 				7B32391B29CEBC8F000780BB /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
 			);
 			productRefGroup = 7B9E057329C711EC00EB534C /* Products */;
@@ -311,6 +338,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0921AD313DF8D92D14BCB54A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoooo/Pods-ToDoooo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoooo/Pods-ToDoooo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDoooo/Pods-ToDoooo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D373BB02AFA4368962E433C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoooo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B9E056E29C711EC00EB534C /* Sources */ = {
@@ -495,6 +564,7 @@
 		};
 		7B9E059D29C711ED00EB534C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE2C67FB52059EDD8B65D4A /* Pods-ToDoooo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -523,6 +593,7 @@
 		};
 		7B9E059E29C711ED00EB534C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500183E86AF7CE1C2DA05C9E /* Pods-ToDoooo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -675,7 +746,7 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -693,12 +764,12 @@
 		};
 		7BC922B429CD648900DCD0F1 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = Realm;
 		};
 		7BC922B629CD648900DCD0F1 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 7BC922B329CD648900DCD0F1 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
