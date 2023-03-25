@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B32391D29CEBC8F000780BB /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7B32391C29CEBC8F000780BB /* SwipeCellKit */; };
+		7B32391F29CECB46000780BB /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32391E29CECB46000780BB /* SwipeTableViewController.swift */; };
 		7B9E057629C711EC00EB534C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E057529C711EC00EB534C /* AppDelegate.swift */; };
 		7B9E057829C711EC00EB534C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E057729C711EC00EB534C /* SceneDelegate.swift */; };
 		7B9E057A29C711EC00EB534C /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E057929C711EC00EB534C /* ToDoListViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B32391E29CECB46000780BB /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		7B9E057229C711EC00EB534C /* ToDoooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9E057529C711EC00EB534C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B9E057729C711EC00EB534C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				7BD9CB3929CCAB7D001250B9 /* CategoryViewController.swift */,
 				7B9E057929C711EC00EB534C /* ToDoListViewController.swift */,
+				7B32391E29CECB46000780BB /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				7BD9CB3A29CCAB7D001250B9 /* CategoryViewController.swift in Sources */,
 				7B9E057A29C711EC00EB534C /* ToDoListViewController.swift in Sources */,
 				7B9E057629C711EC00EB534C /* AppDelegate.swift in Sources */,
+				7B32391F29CECB46000780BB /* SwipeTableViewController.swift in Sources */,
 				7BC922BD29CD9D9400DCD0F1 /* Item.swift in Sources */,
 				7B9E057829C711EC00EB534C /* SceneDelegate.swift in Sources */,
 				7BC922BF29CD9DA800DCD0F1 /* Category.swift in Sources */,
